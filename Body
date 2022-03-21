@@ -1,0 +1,77 @@
+with Ada.Text_IO;
+use Ada.Text_IO;
+with Ada.Integer_Text_IO;
+use Ada.Integer_Text_IO;
+with Ada.Strings.Unbounded;
+use Ada.Strings.Unbounded;
+
+package body Complex_Numbers is
+   function Addition(A1: in Integer; B1: in Integer; A2: in Integer; B2: in Integer) return Unbounded_String is 
+      a_results: Integer:= 0;
+      b_results: Integer:= 0;
+      results: Unbounded_String;
+      a_string: Unbounded_String;
+      b_string: Unbounded_String;
+   begin
+      a_results:= A1 + A2;
+      a_string:= To_Unbounded_String(Integer'Image(a_results));
+      b_results:= B1 + B2;
+      b_string:= To_Unbounded_String(Integer'Image(b_results));
+      
+      results:= a_string & " + " & b_string & "i";
+      return results;
+   end Addition;
+   
+   function Subtraction(A1: in Integer; B1: in Integer; A2: in Integer; B2: in Integer) return Unbounded_String is 
+      a_results: Integer:= 0;
+      b_results: Integer:= 0;
+      results: Unbounded_String;
+      a_string: Unbounded_String;
+      b_string: Unbounded_String;
+   begin
+      a_results:= A1 - A2;
+      a_string:= To_Unbounded_String(Integer'Image(a_results));
+      b_results:= B1 - B2;
+      b_string:= To_Unbounded_String(Integer'Image(b_results));
+      
+      results:= a_string & " - " & b_string & "i";
+      return results;
+   end Subtraction;
+   
+   function Multiplication(A1: in Integer; B1: in Integer; A2: in Integer; B2: in Integer) return Unbounded_String is 
+      a_results: Integer:= 0;
+      b_results: Integer:= 0;
+      product: Integer:= 0;
+      results: Unbounded_String;
+      a_string: Unbounded_String;
+      b_string: Unbounded_String;
+   begin
+      a_results:= (A1 * A2) - (B1 * B2);
+      a_string:= To_Unbounded_String(Integer'Image(a_results));
+      b_results:= (A1 * B2) + (B1 * A2);
+      b_string:= To_Unbounded_String(Integer'Image(b_results));
+      
+      results:= a_string & " + " & b_string & "i"; 
+      return results;
+   end Multiplication;
+   
+   function Division(A1: in Integer; B1: in Integer; A2: in Integer; B2: in Integer) return Unbounded_String is 
+      numerator1: Integer:= 0;
+      numerator2: Integer:= 0;
+      denominator: Integer:= 0;
+      results: Unbounded_String;
+      n1_string: Unbounded_String;
+      n2_string: Unbounded_String;
+      denominator_string: Unbounded_String;
+   begin
+      numerator1:= (A1 * A2) + (B1 * B2);
+      n1_string:= To_Unbounded_String(Integer'Image(numerator1));
+      numerator2:= (A2 * B1) - (A1 * B2);
+      n2_string:= To_Unbounded_String(Integer'Image(numerator2));
+      denominator:= (A2*A2) + (B2*B2);
+      denominator_string:= To_Unbounded_String(Integer'Image(denominator));
+      
+      results:= "(" & n1_string & " + " & n2_string & "i) / " & denominator_string;
+      return results;
+   end Division;
+end Complex_numbers;
