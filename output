@@ -1,0 +1,110 @@
+For a complex number, the number is in the form of x + yi.
+Enter a value for x1: 2
+Enter a value for y1: 3
+ 
+Enter a value for x2: 6
+Enter a value for y2: 7
+Calculator Options
+1 - Addition
+2 - Subtraction
+3 - Multiplication
+4 - Division
+5 - Change Values
+6 - End Calculator
+Select an option: 1
+Sum =  8 +  10i
+ 
+Calculator Options
+1 - Addition
+2 - Subtraction
+3 - Multiplication
+4 - Division
+5 - Change Values
+6 - End Calculator
+Select an option: 2
+Difference = -4 - -4i
+ 
+Calculator Options
+1 - Addition
+2 - Subtraction
+3 - Multiplication
+4 - Division
+5 - Change Values
+6 - End Calculator
+Select an option: 3
+Product = -9 +  32i
+ 
+Calculator Options
+1 - Addition
+2 - Subtraction
+3 - Multiplication
+4 - Division
+5 - Change Values
+6 - End Calculator
+Select an option: 4
+Quotient = ( 33 +  4i) /  85
+ 
+Calculator Options
+1 - Addition
+2 - Subtraction
+3 - Multiplication
+4 - Division
+5 - Change Values
+6 - End Calculator
+Select an option: 5
+For a complex number, the number is in the form of x + yi.
+Enter a value for x1: 1
+Enter a value for y1: 2
+ 
+Enter a value for x2: 3
+Enter a value for y2: 4
+Calculator Options
+1 - Addition
+2 - Subtraction
+3 - Multiplication
+4 - Division
+5 - Change Values
+6 - End Calculator
+Select an option: 1
+Sum =  4 +  6i
+ 
+Calculator Options
+1 - Addition
+2 - Subtraction
+3 - Multiplication
+4 - Division
+5 - Change Values
+6 - End Calculator
+Select an option: 2
+Difference = -2 - -2i
+ 
+Calculator Options
+1 - Addition
+2 - Subtraction
+3 - Multiplication
+4 - Division
+5 - Change Values
+6 - End Calculator
+Select an option: 3
+Product = -5 +  10i
+ 
+Calculator Options
+1 - Addition
+2 - Subtraction
+3 - Multiplication
+4 - Division
+5 - Change Values
+6 - End Calculator
+Select an option: 4
+Quotient = ( 11 +  2i) /  25
+ 
+Calculator Options
+1 - Addition
+2 - Subtraction
+3 - Multiplication
+4 - Division
+5 - Change Values
+6 - End Calculator
+Select an option: 6
+Shutting down...
+[2021-11-10 22:15:09] process terminated successfully, elapsed time: 57.88s
